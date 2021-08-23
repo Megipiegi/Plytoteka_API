@@ -26,7 +26,7 @@ def create_plyty():
     if not request.json or not 'wykonawca' in request.json:
         abort(400)
     plyty = {
-        'id': plytoteka.all()[-1]['id'] + 1,
+        'id': plytoteka.create_id(),
         'wykonawca': request.json['wykonawca'],
         'album': request.json.get('album', ""),
         'posiadam': False

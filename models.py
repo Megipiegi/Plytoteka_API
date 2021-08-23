@@ -11,6 +11,10 @@ class Plytoteka:
 
     def all(self):
         return self.plytoteka
+    
+    def create_id(self):
+        id = self.all()[-1]['id'] + 1
+        return id
 
     def get(self, id):
         plyty = [plyty for plyty in self.all() if plyty['id'] == id]
@@ -27,8 +31,13 @@ class Plytoteka:
             json.dump(self.plytoteka, f)
 
     def update(self, id, data):
-        self.plytoteka[id-1] = data
-        self.save_all()
+        todo = self.get(id)
+        if todo:
+            index = self.todos.index(todo)
+            self.todos[index] = data
+            self.save_all()
+            return True
+        return False
 
     def delete(self, id):
         plyty = self.get(id)

@@ -1,1 +1,26 @@
-[{"id": 1, "wykonawca": "Hania Rani", "album": "Home", "posiadam": true}, {"id": 3, "wykonawca": "Hania Rani", "album": "Esja", "posiadam": false}]
+[
+    {
+        "id": 1,
+        "wykonawca": "Hania Rani",
+        "album": "Home",
+        "posiadam": true
+    },
+    {
+        "id": 2,
+        "wykonawca": "Hania Rani",
+        "album": "Esja",
+        "posiadam": false
+    },
+    {
+        "id": 3,
+        "wykonawca": "Hania Rani",
+        "album": "Esja",
+        "posiadam": false
+    },
+    {
+        "id": 4,
+        "wykonawca": "Nils Frahm",
+        "album": "Says",
+        "posiadam": false
+    }
+]
