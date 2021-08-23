@@ -31,10 +31,10 @@ class Plytoteka:
             json.dump(self.plytoteka, f)
 
     def update(self, id, data):
-        todo = self.get(id)
-        if todo:
-            index = self.todos.index(todo)
-            self.todos[index] = data
+        plyty = self.get(id)
+        if plyty:
+            index = self.plytoteka.index(plyty)
+            self.plytoteka[index] = data
             self.save_all()
             return True
         return False
